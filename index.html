@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Valentine's Day</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div
+        class="container-sm position-absolute top-50 start-50 translate-middle text-center"
+      >
+        <button
+          type="button"
+          title="show"
+          class="btn btn-primary fs-5"
+          data-bs-toggle="modal"
+          data-bs-target="#MyModal"
+          id="showBtn"
+        >
+          Click Me!
+        </button>
+      </div>
+
+      <div
+        class="modal fade position-absolute"
+        id="MyModal"
+        tabindex="-1"
+        aria-labelledby="MyModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" id="modalDialog">
+          <div class="modal-content">
+            <div class="modal-header justify-content-center">
+              <h1
+                class="modal-title fs-3 text-center valentine"
+                id="MyModalLabel"
+              >
+                Will you be my valentine?
+              </h1>
+            </div>
+            <div class="modal-body">
+              <img
+                src="assets/pleading-cat.jpg"
+                class="object-fit-cover w-100"
+                alt="a cat pleading"
+              />
+              <div class="container-sm text-center py-2 fs-5">
+                PWEEAASEEEEEE (don't dare click the red one or else hihihi 🤭)
+              </div>
+            </div>
+            <div class="modal-footer justify-content-center">
+              <div class="container-sm">
+                <div id="liveAlertPlaceholder"></div>
+              </div>
+              <button
+                type="button"
+                class="btn btn-primary fs-4"
+                data-bs-target="#MyModal2"
+                data-bs-toggle="modal"
+                id="yes"
+              >
+                Yes
+              </button>
+              <button type="button" class="btn btn-danger fs-4" id="no">
+                No
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="MyModal2"
+        aria-hidden="true"
+        aria-labelledby="MyModalToggleLabel2"
+        tabindex="-1"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header justify-content-center">
+              <h1
+                class="modal-title fs-5 valentine text-center"
+                id="MyModalToggleLabel2"
+              >
+                Thank you, my loveee 😙❤️
+              </h1>
+            </div>
+            <div class="modal-body">
+              <video
+                src="assets/happy-happy-cat.mp4"
+                width="466px"
+                height="450px"
+                autoplay
+                muted
+                loop
+              >
+                Your browser doesn't support the video tag.
+              </video>
+            </div>
+            <div class="modal-footer">
+              <button
+                class="btn btn-primary"
+                data-bs-target="#MyModal3"
+                data-bs-toggle="modal"
+                type="button"
+              >
+                Continue hihi
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="MyModal3"
+        aria-hidden="true"
+        aria-labelledby="MyModalToggleLabel3"
+        tabindex="-1"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header justify-content-center">
+              <h1
+                class="modal-title fs-5 valentine text-center"
+                id="MyModalToggleLabel3"
+              >
+                Here's the plan
+              </h1>
+            </div>
+            <div class="modal-body">
+              <div class="col-md p-3">
+                <div class="row-md mb-3 p-1">
+                  <p>
+                    <span class="fw-bold fs-5">When:</span> Friday, February 14,
+                    2025
+                  </p>
+                </div>
+                <div class="row-md mb-3 p-1">
+                  <p>
+                    <span class="fw-bold fs-5">Where:</span> Zark's Burger @SM
+                    Tungko
+                  </p>
+                </div>
+                <div class="row-md p-1">
+                  <p>
+                    <span class="fw-bold fs-5">What:</span> Valentine's Day
+                    celebration with photobooth
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                class="btn btn-primary"
+                data-bs-target="#MyModal4"
+                data-bs-toggle="modal"
+                type="button"
+              >
+                Continue bebe tu
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="MyModal4" tabindex="-1" aria-labelledby="MyModalLabel4" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="MyModalLabel4">The date has been set, see ya my pretty baby 🥰</h1>
+            </div>
+            <div class="modal-body">
+              <p>
+                Thank you for being the best girlfriend and most kind significant other to me. I love you so much and I'm always grateful for everything you do and especially having you always. Mahal na mahal ko ikaw baby tu and words aren't enough to express how much I appreciate you and all the small things you do. Always remember, i love you always and in any ways. 
+              </p>
+              <img src="assets/flower-cat.jpg" width="466px" alt="a cat holding flowers">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Enod 🫶</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
